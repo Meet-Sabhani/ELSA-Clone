@@ -30,12 +30,12 @@ nav h1 {
 nav ul {
   display: flex;
   gap: 20px;
-  position: relative;
-  gap: 2rem;
 }
 
 nav ul li {
   list-style: none;
+  position: relative;
+  padding: 10px 20px;
 }
 
 nav ul li a {
@@ -44,21 +44,37 @@ nav ul li a {
   color: #7a7c82;
 }
 
+
 nav ul li a:hover {
   color: #ff5800;
 }
 
-.drop-down {
-  display: none;
+.Drop-Down{
+  flex-direction: column;
   position: absolute;
-  top: 60px;
   background-color: #fff;
-  padding: 10px;
-  border: 1px solid #000;
+  padding: 10px 20px;
+  left: 0;
+  top: 30px;
+  gap: 10px;
+  transition: .4s ease-in-out;
+  visibility: hidden;
+  opacity: 0;
 }
-.drop-down li {
-  line-height: 1.5rem;
-  font-size: 1.5rem;
+
+nav ul li:hover .Drop-Down{
+  visibility: visible;
+  top: 50px;
+  opacity: 1;
+}
+.Drop-Down li{
+  font-size: 1.3rem;
+  transition: .3s ease-in-out;
+}
+
+.Drop-Down li:hover{
+  background-color: #ff5800;
+  color: #fff;
 }
 
 .hero {
@@ -80,6 +96,7 @@ nav ul li a:hover {
 
 .hero h1 {
   font-size: 4rem;
+  text-align: center;
 }
 
 .Hero-btn {
@@ -123,6 +140,29 @@ nav ul li a:hover {
   display: none;
 }
 
+@media (max-width: 1100px){
+  .hero h3 {
+    font-size: 2rem;
+  }
+  nav ul li {
+    padding: 8px 13px;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+  }
+  nav ul {
+    display: none;
+  }
+  nav {
+    padding: 0 3rem;
+  }
+  #menu-icon {
+    display: block;
+    font-size: 1.5rem;
+  }
+}
+
 @media (max-width: 776px) {
   nav ul {
     display: none;
@@ -155,14 +195,6 @@ nav ul li a:hover {
   .hero {
     height: auto;
     padding: 0 3rem;
-  }
-
-  .hero h3 {
-    font-size: 6vmax;
-  }
-
-  .hero h1 {
-    font-size: 8vmax;
   }
 
   .Hero-btn {
@@ -247,11 +279,11 @@ b {
 
 .Theme {
   background-color: #ff5800;
-  height: 130px;
+  height: 170px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 4rem;
+  padding: 2rem 4rem;
 }
 
 .Theme-left {
@@ -270,7 +302,7 @@ b {
   border-radius: 6px;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 900px) {
   .Theme {
     flex-direction: column;
     height: 236px;
@@ -302,7 +334,6 @@ b {
 }
 
 .consectetiret-title {
-  font-size: 2rem;
   padding-left: 3.5rem;
 }
 
@@ -390,8 +421,7 @@ b {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: 4rem;
-  padding-right: 3rem;
+  padding: 1rem 4rem 3rem 7rem;
 }
 
 .spotlight-left h1,
@@ -472,9 +502,8 @@ b {
 }
 
 .right-spotlight-text {
-  padding-left: 3rem;
-  width: 35%;
-  margin-right: 15%;
+  width: 50%;
+  padding: 1rem 7rem 2rem 3rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -574,7 +603,7 @@ b {
 }
 
 .Portfolio-card {
-  width: 440px;
+  width: 421px;
   height: 290px;
   position: relative;
   margin: 0 auto;
@@ -663,19 +692,19 @@ b {
 
 .clients-left-imgs {
   display: flex;
-  width: 70%;
+  width: 65%;
   flex-wrap: wrap;
   gap: 1rem;
   justify-content: space-around;
 }
 
 .clients-left-imgs img {
-  width: 250px;
+  width: 206px;
   filter: grayscale(1);
+  transition: .4s ease-in-out;
 }
 
 .clients-left-imgs img:hover {
-  width: 250px;
   filter: grayscale(0);
 }
 
@@ -736,7 +765,7 @@ b {
   width: 7%;
 }
 .team img {
-  height: 500px;
+  height: 422px;
   width: 100%;
   object-fit: cover;
 }
@@ -780,7 +809,7 @@ b {
 }
 
 .Article {
-  width: 380px;
+  width: 376px;
   height: 604px;
   margin: 0 auto;
   margin-bottom: 2rem;
@@ -945,8 +974,7 @@ b {
 
 .member {
   position: relative;
-  border: 2px solid black;
-  width: 350px;
+  width: 315px;
   height: 400px;
   position: relative;
   margin: 0 auto;
