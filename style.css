@@ -164,7 +164,7 @@ nav ul li:hover .Drop-Down {
 }
 
 @media (max-width: 1100px) {
-  .hero h3 {
+  .hero-bottam  h3 {
     font-size: 2rem;
   }
   nav ul li {
@@ -173,6 +173,9 @@ nav ul li:hover .Drop-Down {
 
   .hero-bottam{
     padding: 10px 30px;
+  }
+  .hero-bottam h1{
+    font-size: 60px;
   }
 }
 
@@ -199,10 +202,17 @@ nav ul li:hover .Drop-Down {
     padding: 3rem 2rem;
     gap: 15px;
     transition: 0.7s all ease-in-out;
+    z-index: 1;
   }
 
   nav ul li a {
     font-size: 1.2rem;
+  }
+  .hero-bottam h3{
+    font-size: 1.5rem;
+  }
+  .hero-bottam h1{
+    font-size: 35px;
   }
 
   .Hero-btn {
@@ -376,13 +386,13 @@ b {
 }
 
 .CONSECTETURET img {
-  width: 30%;
+  width: 33%;
+  height: 300px;
   object-fit: cover;
 }
 
 .consectetiret-title {
-  padding-left: 3.5rem;
-  font-size: 2rem;
+  font-size: 1.7rem;
 }
 
 .consectetiret-title h1:nth-child(2) {
@@ -408,7 +418,7 @@ b {
 
 .list {
   display: flex;
-  width: 40%;
+  width: 49%;
   margin: 1rem 0;
 }
 
@@ -421,10 +431,9 @@ b {
 }
 
 .list h1 {
-  margin-bottom: 1rem;
+  margin-bottom: 10px;
 }
 .list p {
-  line-height: 1.5rem;
   color: #7a7c82;
 }
 
@@ -453,7 +462,7 @@ b {
 
 .features {
   background-color: #eeeeee;
-  padding: 3rem 4rem;
+  padding: 6rem 4rem;
 }
 
 .features-title {
@@ -462,7 +471,18 @@ b {
 
 .features-title h1:nth-child(2) {
   color: #ff5800;
+  position: relative;
 }
+
+.features-title h1:nth-child(2)::after{
+  content: '';
+  position: absolute;
+  border-bottom: 3px solid #ff5800;
+  bottom: 0;
+  left: 0;
+  width: 5%;
+}
+
 .features-list-items {
   display: flex;
   flex-wrap: wrap;
@@ -474,7 +494,6 @@ b {
   display: flex;
   margin: 1rem 0;
   width: 25%;
-  padding: 10px 20px;
 }
 
 .features-list i {
@@ -495,6 +514,9 @@ b {
 @media (max-width: 650px) {
   .features-list {
     width: 100%;
+  }
+  .features{
+    padding: auto 2rem;
   }
 }
 
@@ -616,7 +638,7 @@ b {
 .services {
   display: flex;
   flex-wrap: wrap;
-  padding: 5rem 4rem;
+  padding: 6rem 4rem;
   justify-content: space-between;
   margin-top: 4rem;
 }
@@ -676,6 +698,9 @@ b {
 }
 
 @media (max-width: 770px) {
+  .services{
+    padding: 3rem 2rem;
+  }
   .services-titel {
     width: 100%;
   }
@@ -816,8 +841,13 @@ b {
 .clients-right {
   width: 30%;
 }
+.clients-right h3{
+  font-size: 3rem;
+  font-weight: 400;
+}
 .clients-right h1 {
   font-size: 3rem;
+  font-weight: 400;
 }
 .clients-right h1:nth-child(2) {
   color: #ff5800;
@@ -849,10 +879,11 @@ b {
 /* -------------------- team ------------------------ */
 
 .team {
-  padding: 3rem 4rem;
+  padding: 6rem 4rem;
 }
 .team-title {
-  font-size: 2.5rem;
+  font-size: 2rem;
+  font-weight: 300;
 }
 .team-title h1:nth-child(2),
 .after {
@@ -870,9 +901,21 @@ b {
   width: 7%;
 }
 .team img {
-  height: 422px;
+  height: 500px;
   width: 100%;
   object-fit: cover;
+  margin-bottom: 2rem;
+}
+
+@media (max-width:700px) {
+  .team{
+    padding: 3rem 2rem;
+  }
+
+  .team img{
+    height: 300px;
+  }
+  
 }
 
 /* --------------------------- work --------------------------- */
@@ -1044,6 +1087,7 @@ b {
   background-color: #ff5900d9;
   text-align: center;
   border-radius: 8px;
+  border: 2px solid #ECECEC;
 }
 
 @media (max-width: 930px) {
@@ -1193,7 +1237,8 @@ form button {
 
 @media (max-width: 600px) {
   .contact-form {
-    width: 90%;
+    width: 100%;
+    padding: 3rem 2rem;
   }
 }
 
@@ -1209,7 +1254,7 @@ footer {
 }
 
 footer h1 {
-  font-size: 2rem;
+  font-size: 1.4rem;
   margin-bottom: 2rem;
 }
 
@@ -1243,9 +1288,9 @@ footer a:hover {
 }
 
 .footer-second-sec button {
-  padding: 10px 13px;
+  padding: 7px 13px;
   border-radius: 6px;
-  background-color: #ff5800;
+  background-color: #FF5800;
   border: none;
   font-size: 1rem;
 }
@@ -1274,6 +1319,11 @@ footer a:hover {
 .end-right i {
   margin-right: 10px;
   font-size: 18px;
+  cursor: pointer;
+  transition: .3s ease-in-out;
+}
+.end-right i:hover{
+  color: #ff5900;
 }
 
 .end-left p:nth-child(1) {
