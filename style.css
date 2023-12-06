@@ -355,10 +355,14 @@ b {
 
 .Theme a {
   width: 180px;
-  padding: 1rem 2rem;
+  height: 100px;
+  padding: 10px 20px;
   background-color: #fff;
-  border-radius: 6px;
+  border-radius: 5px;
   text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: #ff5800;
 }
 
 @media (max-width: 900px) {
@@ -368,6 +372,7 @@ b {
     justify-content: center;
     gap: 20px;
     padding: 2rem 2rem;
+    text-align: center;
   }
   .Theme-left {
     width: 100%;
