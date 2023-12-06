@@ -691,17 +691,21 @@ b {
   margin-bottom: 3rem;
 }
 
+.Portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 .Portfolio-card {
-  width: 32.5%;
-  height: 290px;
-  position: relative;
+  width: 33.33%;
   margin: 0 auto;
   margin-bottom: 2rem;
+  position: relative;
 }
 
 .Portfolio-card img {
   width: 100%;
-  display: block;
   height: 100%;
   object-fit: cover;
 }
@@ -710,7 +714,8 @@ b {
   position: absolute;
   top: 0;
   height: 100%;
-  background: linear-gradient(transparent, rgba(0, 0, 0, 0.716));
+  width: 100%;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.794));
   color: #fff;
   padding: 2rem;
   opacity: 0;
@@ -743,13 +748,6 @@ b {
   font-size: 2rem;
 }
 
-.Portfolio-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 1rem;
-}
-
 .Project-btn {
   display: flex;
   align-items: center;
@@ -773,7 +771,7 @@ b {
 
 @media (max-width: 600px) {
   .Portfolio-card {
-    width: 100%;
+    width: 90%;
   }
 }
 
