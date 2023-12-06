@@ -908,7 +908,7 @@ b {
 }
 
 .Article {
-  width: 376px;
+  width: 32%;
   height: 604px;
   margin: 0 auto;
   margin-bottom: 2rem;
@@ -916,29 +916,29 @@ b {
 
 .Article img {
   width: 96%;
-  border: 1px solid #7a7c82;
+  border: 1px solid #DDDDDD;
   padding: 8px;
   border-radius: 7px;
 }
 
 .Article-h1 {
-  font-size: 3rem;
+  font-size: 2rem;
   color: #ff5800;
   position: relative;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 .Article-h1::after {
   content: "";
   position: absolute;
   border-bottom: 3px solid #ff5800;
-  width: 40%;
+  width: 25%;
   left: 0;
-  bottom: 0;
+  bottom: -15px;
 }
 
 .Article p {
-  color: #7a7c82;
-  line-height: 1.4rem;
+  color: #827E9E;
+  line-height: 1.7rem;
   margin-bottom: 1rem;
 }
 
@@ -946,19 +946,20 @@ b {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  gap: 2%;
 }
 
 .news-icon-text {
   margin-bottom: 1rem;
 }
 .news-icon-text i {
-  margin: 10px;
+  margin: 5px 0;
 }
 
 .read-more-btn {
   background-color: #ff5800;
   color: #fff;
-  padding: 7px 13px;
+  padding: 5px 7px;
   text-decoration: none;
   border-radius: 5px;
 }
@@ -1043,6 +1044,15 @@ b {
   .skill {
     width: 100%;
   }
+  .skills {
+    padding: 3rem 2rem;
+  }
+  .skills-head p {
+    line-height: 1rem;
+    /* margin-bottom: 2rem; */
+    /* color: #7a7c82; */
+    padding: 10px 20px;
+  }
 }
 
 /* ------------------ team-seconde --------------------- */
@@ -1073,11 +1083,11 @@ b {
 
 .member {
   position: relative;
-  width: 315px;
+  width: 25%;
   height: 400px;
   position: relative;
   margin: 0 auto;
-  margin-bottom: 2rem;
+  margin-bottom: 3%;
 }
 .member img {
   width: 100%;
@@ -1109,6 +1119,18 @@ b {
 
 .member:hover .member-info {
   opacity: 1;
+}
+
+@media (max-width: 900px) {
+  .member{
+    width: 48.5%;
+  }
+}
+
+@media (max-width: 600px) {
+  .member{
+    width: 100%;
+  }
 }
 
 /* ------------------- contact-form ------------------------ */
