@@ -189,6 +189,9 @@ nav ul li.active .Drop-Down {
   .Drop-Down {
     position: static;
     border: none;
+    visibility: unset;
+    opacity: unset;
+    display: none;
   }
 
   nav {
@@ -213,7 +216,7 @@ nav ul li.active .Drop-Down {
     transition: all 0.7s ease-in-out;
     z-index: 1;
     overflow: hidden;
-    animation: moveRight 1s alternate;
+    animation: moveRight 1s ;
   }
 
   @keyframes moveRight {
