@@ -35,6 +35,7 @@ nav ul li {
   list-style: none;
   position: relative;
   padding: 10px 16px;
+  color: #7a7c82;
 }
 
 nav ul li a {
@@ -57,6 +58,7 @@ nav ul li a:hover {
   opacity: 0;
   border: 1px solid #000;
   z-index: 1;
+  min-width: 160px;
 }
 
 nav ul li:hover .Drop-Down {
@@ -182,11 +184,26 @@ nav ul li:hover .Drop-Down {
     display: block;
   }
   .Drop-Down {
-    /* visibility: visible; */
-    /* opacity: 1; */
-    top: 50px;
-    position: absolute;
+    position: static;
+    overflow: hidden;
+    visibility: unset;
+    height: 0;
+    border: none;
+    transition: all .9s ease-in-out;
+    opacity: 0;
   }
+
+  nav ul li.active .Drop-Down{
+    display: block;
+    height: auto;
+    opacity: 1;
+  }
+  nav ul li:hover .Drop-Down{
+    display: block;
+     height: unset;
+     opacity: 1;
+  }
+
   nav {
     padding: 0 3rem;
     height: auto;
