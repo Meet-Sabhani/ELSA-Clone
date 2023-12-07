@@ -182,9 +182,10 @@ nav ul li:hover .Drop-Down {
     display: block;
   }
   .Drop-Down {
-    visibility: visible;
+    /* visibility: visible; */
     /* opacity: 1; */
     top: 50px;
+    position: absolute;
   }
   nav {
     padding: 0 3rem;
@@ -200,7 +201,7 @@ nav ul li:hover .Drop-Down {
     display: flex;
     position: absolute;
     flex-direction: column;
-    top: 61px;
+    top: 60px;
     left: 0;
     background-color: #fff;
     width: 100%;
